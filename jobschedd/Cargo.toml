@@ -1,0 +1,12 @@
+[package]
+name = "jobschedd"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+jobsched-common = { version = "0.1.0", path = "../crates/jobsched-common" }
+runner = { version = "0.1.0", path = "../crates/runner" }
+serde_json = "1.0.149"
+tokio = { version = "1.49.0", features = ["full"] }
+tracing = "0.1.44"
+tracing-subscriber = { version = "0.3.22", features = ["fmt"] }
